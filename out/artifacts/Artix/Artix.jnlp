@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Artix.jnlp">
+  <information>
+    <title>Artix</title>
+    <vendor>Unknown</vendor>
+    <description>Artix</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Artix.jar" size="60552" download="eager" />
+    <jar href="javax.mail.jar" size="659033" download="eager" />
+    <jar href="jfoenix-0.0.0-SNAPSHOT.jar" size="2710092" download="eager" />
+    <jar href="resources\controlsfx-8.40.11.jar" size="985420" download="eager" />
+    <jar href="resources\fontawesomefx-commons-8.15.jar" size="20957" download="eager" />
+    <jar href="resources\fontawesomefx-controls-8.15.jar" size="3369" download="eager" />
+    <jar href="resources\fontawesomefx-emojione-2.2.7-2.jar" size="3642164" download="eager" />
+    <jar href="resources\fontawesomefx-fontawesome-4.7.0-5.jar" size="136891" download="eager" />
+    <jar href="resources\fontawesomefx-glyphsbrowser-1.3.0.jar" size="68461" download="eager" />
+    <jar href="resources\fontawesomefx-icons525-3.0.0-4.jar" size="110545" download="eager" />
+    <jar href="resources\fontawesomefx-materialdesignfont-1.7.22-4.jar" size="197373" download="eager" />
+    <jar href="resources\fontawesomefx-materialicons-2.2.0-5.jar" size="103686" download="eager" />
+    <jar href="resources\fontawesomefx-octicons-4.3.0-5.jar" size="37157" download="eager" />
+    <jar href="resources\fontawesomefx-weathericons-2.0.10-5.jar" size="83098" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="600" height="400" main-class="artix.Main"  name="Artix" />
+  <update check="background"/>
+</jnlp>

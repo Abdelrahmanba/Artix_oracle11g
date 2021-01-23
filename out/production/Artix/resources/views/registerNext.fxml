@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.controlsfx.control.textfield.CustomTextField?>
+
+<Pane fx:id="signupNextPane" prefHeight="720.0" prefWidth="613.0" style="-fx-background-color: #eeeeee;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.RegisterNext">
+   <children>
+      <Text fill="#4bb543" layoutX="84.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You're All Set!" wrappingWidth="327.916015625">
+         <font>
+            <Font name="Yu Gothic UI Regular" size="50.0" />
+         </font>
+      </Text>
+      <MaterialDesignIconView fill="#4bb543" glyphName="CHECK_CIRCLE" layoutX="13.0" layoutY="115.0" size="60" wrappingWidth="1.0" />
+      <ImageView fx:id="pic" fitHeight="167.0" fitWidth="169.0" layoutX="395.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../default_pic.png" />
+         </image>
+         <effect>
+            <InnerShadow color="#00bcd4" />
+         </effect>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+      <Text fill="#1fbfe0" layoutX="23.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="lets set your profile picture.." wrappingWidth="383.0">
+         <font>
+            <Font name="Yu Gothic UI Regular" size="21.0" />
+         </font>
+      </Text>
+      <Button fx:id="browser" layoutX="26.0" layoutY="241.0" mnemonicParsing="false" onAction="#openBrowser" text="Browser" />
+      <CustomTextField fx:id="browserField" editable="false" layoutX="107.0" layoutY="241.0" minWidth="105.0" prefHeight="25.0" prefWidth="236.0" />
+      <Hyperlink focusTraversable="false" layoutX="499.0" layoutY="677.0" onAction="#skip" text="Skip for now..">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Hyperlink>
+      <Text fill="#1fbfe0" layoutX="23.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" text="And you may need a Payment Method.." wrappingWidth="383.0">
+         <font>
+            <Font name="Yu Gothic UI Regular" size="21.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="cardName" focusColor="#03a9f4" labelFloat="true" layoutX="69.0" layoutY="433.0" prefHeight="25.0" prefWidth="211.0" promptText="CardHolder Name" />
+      <JFXTextField fx:id="cardNo" focusColor="#03a9f4" labelFloat="true" layoutX="69.0" layoutY="480.0" prefHeight="25.0" prefWidth="211.0" promptText="Card Numper " />
+      <JFXTextField fx:id="expM" focusColor="#03a9f4" labelFloat="true" layoutX="69.0" layoutY="524.0" prefHeight="25.0" prefWidth="89.0" promptText="Exp Month" />
+      <JFXTextField fx:id="expY" focusColor="#03a9f4" labelFloat="true" layoutX="185.0" layoutY="524.0" prefHeight="25.0" prefWidth="89.0" promptText="Exp Year" />
+      <JFXTextField fx:id="cvv" focusColor="#03a9f4" labelFloat="true" layoutX="73.0" layoutY="567.0" prefHeight="25.0" prefWidth="41.0" promptText="CVV" />
+      <Text layoutX="161.0" layoutY="545.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\\">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <JFXButton focusTraversable="false" layoutX="139.0" layoutY="638.0" onAction="#save" text="Save and Continue" textFill="#03a9f4">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="errorpic" layoutX="117.0" layoutY="273.0" text="Please Select a Picture" textFill="RED" visible="false">
+         <graphic>
+            <MaterialDesignIconView fill="RED" glyphName="ALERT_CIRCLE_OUTLINE" size="15" />
+         </graphic>
+      </Label>
+      <Label fx:id="errorfill" layoutX="71.0" layoutY="602.0" text="Please fill all fields" textFill="RED" visible="false">
+         <graphic>
+            <MaterialDesignIconView fill="RED" glyphName="ALERT_CIRCLE_OUTLINE" size="15" />
+         </graphic>
+      </Label>
+   </children>
+</Pane>

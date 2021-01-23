@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane cache="true" cacheHint="SPEED" prefHeight="619.0" prefWidth="861.0" style="-fx-background-color: F2FAFE;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.ExploreArtistController">
+   <children>
+      <Pane prefHeight="92.0" prefWidth="861.0" style="-fx-background-color: linear-gradient(to top right,#03A9F4,#96DDFE);">
+         <children>
+            <Label fx:id="name" layoutX="64.0" layoutY="17.0" text="Sample" textFill="WHITE">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="41.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="37.0" fitWidth="27.0" layoutX="829.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Exit.png" />
+               </image>
+               <effect>
+                  <InnerShadow choke="1.0" color="#0b88e8" height="124.78" radius="79.68" width="195.94" />
+               </effect>
+            </ImageView>
+            <JFXButton layoutX="826.0" layoutY="4.0" prefHeight="27.0" prefWidth="33.0" text=" " textFill="#04fffb" fx:id="x">
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <TableView fx:id="table" fixedCellSize="0.0" layoutX="450.0" layoutY="165.0" prefHeight="422.0" prefWidth="393.0" stylesheets="@../resources/Table%20-%20Copy.css">
+        <columns>
+          <TableColumn fx:id="image" editable="false" prefWidth="217.0" text="Image" />
+          <TableColumn fx:id="nameP" editable="false" prefWidth="175.0" text="Painting Name" />
+        </columns>
+      </TableView>
+      <JFXTextArea fx:id="bio" editable="false" focusColor="#005cb2" layoutX="47.0" layoutY="348.0" prefHeight="228.0" prefWidth="342.0" stylesheets="@../Textarea.css" text="dfggdg" unFocusColor="#0179bf">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextArea>
+      <Label layoutX="47.0" layoutY="318.0" text="Bio &amp; History:" textFill="#0094d3">
+         <font>
+            <Font name="Yu Gothic UI Light" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="451.0" layoutY="124.0" text="Paintings:" textFill="#0094d3">
+         <font>
+            <Font name="Yu Gothic UI Light" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imageArtist" fitHeight="197.0" fitWidth="331.0" layoutX="47.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</Pane>

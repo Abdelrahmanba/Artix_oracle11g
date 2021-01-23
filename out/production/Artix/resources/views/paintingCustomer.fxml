@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.PaintingController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1000.0" style="-fx-background-color: linear-gradient(to top right,#00BCD4,#03A9F4);">
+         <children>
+            <Pane prefHeight="120.0" prefWidth="1000.0" style="-fx-background-color: linear-gradient(to top right,#00BCD4,#03A9F4);">
+               <children>
+                  <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="14.0" layoutY="36.0" prefHeight="48.0" prefWidth="45.0" visible="false">
+                     <graphic>
+                        <MaterialDesignIconView fx:id="back" fill="WHITE" glyphName="ARROW_LEFT_BOLD" size="40" strokeWidth="2.0" wrappingWidth="41.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </MaterialDesignIconView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <ImageView fx:id="home" fitHeight="112.0" fitWidth="136.0" layoutX="434.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ArtixLogoX.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Label fx:id="paintingName" alignment="CENTER" layoutX="78.0" layoutY="19.0" prefHeight="75.0" prefWidth="353.0" stylesheets="@../fontPainting.css" text="Monaliza" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+                     <font>
+                        <Font name="Candara" size="55.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ArtistName" alignment="CENTER" contentDisplay="CENTER" layoutX="551.0" layoutY="11.0" prefHeight="75.0" prefWidth="435.0" stylesheets="@../fontArtist.css" text="Leonardo Da Vinci" textFill="WHITE">
+                     <font>
+                        <Font name="Brush Script MT Italic" size="39.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="whoB" layoutX="723.0" layoutY="65.0" prefHeight="40.0" prefWidth="106.0" text="Who?" textFill="#fff153">
+                     <graphic>
+                        <MaterialDesignIconView fill="#fff153" glyphName="ARROW_DOWN_DROP_CIRCLE" size="30" />
+                     </graphic>
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <JFXButton fx:id="addToCart" buttonType="RAISED" layoutX="530.0" layoutY="393.0" prefHeight="47.0" prefWidth="435.0" style="-fx-background-color: #dbcc21;" text=" Add to Cart" textFill="WHITE">
+               <graphic>
+                  <MaterialDesignIconView fx:id="cart" fill="WHITE" glyphName="CART_PLUS" size="25" strokeWidth="2.0" text="" />
+               </graphic>
+               <font>
+                  <Font name="Calibri Bold Italic" size="22.0" />
+               </font>
+            </JFXButton>
+            <Separator layoutY="120.0" prefHeight="0.0" prefWidth="1000.0" />
+            <Label fx:id="hight" alignment="CENTER" layoutX="692.0" layoutY="251.0" prefHeight="35.0" prefWidth="69.0" style="-fx-background-color: white; -fx-border-color: #dbcc21; -fx-background-radius: 5 5 5 5; -fx-border-radius: 5 5 5 5;" text="512" textFill="#2fb7dd">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="width" alignment="CENTER" layoutX="808.0" layoutY="251.0" prefHeight="35.0" prefWidth="69.0" style="-fx-background-color: white; -fx-border-color: #dbcc21; -fx-background-radius: 5 5 5 5; -fx-border-radius: 5 5 5 5;" text="620" textFill="#2fb7dd">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="likes" alignment="CENTER" layoutX="530.0" layoutY="321.0" prefHeight="47.0" prefWidth="139.0" style="-fx-border-color: #dbcc21; -fx-background-color: #ffffff; -fx-border-width: 1;" text="120" textFill="#2fb7dd">
+               <font>
+                  <Font name="Calibri Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="price" alignment="CENTER" layoutX="689.0" layoutY="196.0" prefHeight="35.0" prefWidth="216.0" style="-fx-border-color: #dbcc21; -fx-background-color: #ffffff; -fx-border-width: 1; -fx-background-radius: 5 5 5 5; -fx-border-radius: 5 5 5 5;" text="1600.56" textFill="#2fb7dd">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="528.0" layoutY="198.0" text="Price:" textFill="#ffed29">
+               <font>
+                  <Font name="Calibri Bold" size="27.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="likeB" alignment="CENTER" buttonType="RAISED" layoutX="662.0" layoutY="320.0" prefHeight="48.0" prefWidth="299.0" style="-fx-background-color: #dbcc21#dbcc21;" text="Like " textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold Italic" size="23.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView fx:id="heartlike" fill="WHITE" glyphName="HEART" size="25" />
+               </graphic>
+               <effect>
+                  <DropShadow height="14.95" offsetX="10.0" radius="5.4625" width="8.9" />
+               </effect>
+            </JFXButton>
+            <JFXTextArea fx:id="desc" editable="false" focusColor="WHITE" layoutX="38.0" layoutY="495.0" prefHeight="169.0" prefWidth="917.0" stylesheets="@../resources/Textarea%20-%20Painting.css" text="sample" unFocusColor="#dbcc21">
+               <font>
+                  <Font name="Calibri Bold Italic" size="19.0" />
+               </font>
+            </JFXTextArea>
+            <MaterialDesignIconView fill="#dbcc21" glyphName="WINDOW_CLOSE" layoutX="770.0" layoutY="281.0" size="35" />
+            <ImageView fx:id="img" fitHeight="315.0" fitWidth="451.0" layoutX="38.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="genre" alignment="CENTER" layoutX="689.0" layoutY="147.0" prefHeight="35.0" prefWidth="266.0" style="-fx-background-color: white; -fx-border-color: #dbcc21; -fx-background-radius: 5 5 5 5; -fx-border-radius: 5 5 5 5;" text="1600.56" textFill="#2fb7dd">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="522.0" layoutY="149.0" text="Genre:" textFill="#ffed29">
+               <font>
+                  <Font name="Calibri Bold" size="27.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="unit" focusColor="#dbcc21" layoutX="890.0" layoutY="251.0" prefHeight="35.0" prefWidth="68.0" stylesheets="@../combobox.css" unFocusColor="#dbcc21" />
+            <Label layoutX="528.0" layoutY="251.0" prefHeight="35.0" prefWidth="157.0" text="Dimensions:" textFill="#ffed29">
+               <font>
+                  <Font name="Calibri Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="917.0" layoutY="198.0" text="ILS" textFill="#ffed29">
+               <font>
+                  <Font name="Calibri" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

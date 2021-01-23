@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane cache="true" cacheHint="SPEED" prefHeight="604.0" prefWidth="861.0" style="-fx-background-color: F2FAFE;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.ExploreUserController">
+   <children>
+      <Pane prefHeight="92.0" prefWidth="861.0" style="-fx-background-color: linear-gradient(to top right,#03A9F4,#96DDFE);">
+         <children>
+            <Label fx:id="name" layoutX="64.0" layoutY="17.0" text="Sample" textFill="WHITE">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="41.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="37.0" fitWidth="27.0" layoutX="829.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Exit.png" />
+               </image>
+               <effect>
+                  <InnerShadow choke="1.0" color="#0b88e8" height="124.78" radius="79.68" width="195.94" />
+               </effect>
+            </ImageView>
+            <JFXButton layoutX="826.0" layoutY="4.0" prefHeight="27.0" prefWidth="33.0" text=" " textFill="#04fffb" fx:id="x">
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <TableView fx:id="table" fixedCellSize="0.0" layoutX="101.0" layoutY="433.0" prefHeight="148.0" prefWidth="703.0" stylesheets="@../resources/Table%20-%20Copy.css">
+        <columns>
+          <TableColumn fx:id="imageC" editable="false" prefWidth="171.0" text="Image" />
+          <TableColumn fx:id="nameC" editable="false" prefWidth="382.0" text="Painting Name" />
+            <TableColumn fx:id="priceC" editable="false" prefWidth="169.0" text="Price" />
+        </columns>
+      </TableView>
+      <Label layoutX="100.0" layoutY="391.0" text="Cart:" textFill="#0094d3">
+         <font>
+            <Font name="Yu Gothic UI Light" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="image" fitHeight="230.0" fitWidth="220.0" layoutX="584.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true" />
+      <VBox layoutX="100.0" layoutY="129.0" prefHeight="230.0" prefWidth="150.0" spacing="10.0">
+         <children>
+            <Label text="Username:" textFill="#0094d3">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="10.0" text="Email:" textFill="#0094d3">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="40.0" text="Phone No. :" textFill="#0094d3">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="70.0" text="BirthDate:" textFill="#0094d3">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="290.0" text="Payment Method:" textFill="#0094d3">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="100.0" text="Address:" textFill="#0094d3">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="292.0" layoutY="129.0" prefHeight="190.0" prefWidth="244.0" spacing="10.0">
+         <children>
+            <Label fx:id="username" prefHeight="30.0" prefWidth="255.0" text="Sample" textFill="#d1ac00">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="email" layoutX="10.0" layoutY="10.0" prefHeight="30.0" prefWidth="240.0" text="Sample" textFill="#d1ac00">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="phone" layoutX="10.0" layoutY="40.0" prefHeight="30.0" prefWidth="247.0" text="Sample" textFill="#d1ac00">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="bday" layoutX="10.0" layoutY="70.0" text="Sample" textFill="#d1ac00">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="payment" layoutX="10.0" layoutY="100.0" text="Sample" textFill="#d1ac00">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Label fx:id="address" layoutX="292.0" layoutY="329.0" prefHeight="92.0" prefWidth="254.0" text="Sample" textFill="#d1ac00">
+         <font>
+            <Font name="Yu Gothic UI Light" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

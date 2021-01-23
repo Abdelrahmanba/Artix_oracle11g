@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="stackPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.RegisterController">
+   <children>
+      <BorderPane fx:id="signupPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1000.0">
+         <center>
+            <VBox prefHeight="720.0" prefWidth="743.0" style="-fx-background-color: #eeeeee;">
+               <children>
+                  <Region prefHeight="12.0" prefWidth="613.0" />
+                  <Region prefHeight="42.0" prefWidth="613.0" />
+                  <HBox>
+                     <children>
+                        <JFXTextField fx:id="firstName" alignment="CENTER" cache="true" cacheHint="SPEED" centerShape="false" focusColor="#dbcc21" labelFloat="true" maxWidth="250.0" prefHeight="25.0" prefWidth="250.0" promptText="First Name" unFocusColor="#03a9f4">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <Region prefHeight="30.0" prefWidth="50.0" />
+                        <JFXTextField fx:id="lastName" alignment="CENTER" cache="true" cacheHint="SPEED" centerShape="false" focusColor="#dbcc21" labelFloat="true" maxWidth="250.0" prefHeight="25.0" prefWidth="250.0" promptText="Last Name" scaleShape="false" unFocusColor="#03a9f4">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <Region prefHeight="7.0" prefWidth="613.0" />
+                  <Label fx:id="nameE" prefHeight="20.0" prefWidth="254.0" text="Name can't be Empty" textFill="#e41010" visible="false">
+                     <graphic>
+                        <MaterialDesignIconView fill="#dd0e0e" glyphName="ALERT_CIRCLE_OUTLINE" size="14" />
+                     </graphic>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Region prefHeight="11.0" prefWidth="613.0" />
+                  <Region prefHeight="6.0" prefWidth="613.0" />
+                  <HBox alignment="BASELINE_LEFT" prefHeight="20.0" prefWidth="613.0">
+                     <children>
+                        <JFXTextField fx:id="email" alignment="CENTER" cache="true" cacheHint="SPEED" centerShape="false" focusColor="#dbcc21" labelFloat="true" maxWidth="250.0" minWidth="250.0" prefHeight="30.0" prefWidth="250.0" promptText="Email Address" scaleShape="false" unFocusColor="#03a9f4">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <Region prefHeight="20.0" prefWidth="15.0" />
+                        <Label fx:id="validEmail" alignment="BOTTOM_LEFT" text="This Email is Not Registerd," textFill="#1f9e24" visible="false">
+                           <graphic>
+                              <MaterialDesignIconView fx:id="validEmailIcon" fill="#1f9e24" glyphName="CHECKBOX_MARKED_CIRCLE_OUTLINE" size="14" />
+                           </graphic>
+                        </Label>
+                        <Hyperlink fx:id="verifyEmail" alignment="BOTTOM_LEFT" onAction="#verify" prefHeight="26.0" prefWidth="164.0" text="Click Here to Verify." visible="false" />
+                     </children>
+                  </HBox>
+                  <Region prefHeight="9.0" prefWidth="613.0" />
+                  <Label fx:id="emailE" prefHeight="20.0" prefWidth="254.0" text="Email can't be Empty" textFill="#e41010" visible="false">
+                     <graphic>
+                        <MaterialDesignIconView fill="#dd0e0e" glyphName="ALERT_CIRCLE_OUTLINE" size="14" />
+                     </graphic>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Region prefHeight="18.0" prefWidth="613.0" />
+                  <HBox alignment="CENTER_LEFT">
+                     <children>
+                        <JFXTextField fx:id="username" alignment="CENTER" cache="true" cacheHint="SPEED" centerShape="false" focusColor="#dbcc21" labelFloat="true" maxWidth="250.0" prefHeight="30.0" prefWidth="250.0" promptText="Username" scaleShape="false" unFocusColor="#03a9f4">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <Region prefHeight="30.0" prefWidth="45.0" />
+                        <MaterialDesignIconView fx:id="satisfys" fill="#47ff22" glyphName="CHECKBOX_MARKED_CIRCLE_OUTLINE" size="14" visible="false">
+                           <effect>
+                              <InnerShadow color="#229e53" />
+                           </effect>
+                        </MaterialDesignIconView>
+                        <Text fx:id="userNameHint" strokeType="OUTSIDE" strokeWidth="0.0" text=" Can contain Charactars and Numbers only." visible="false" />
+                     </children>
+                  </HBox>
+                  <Region prefHeight="10.0" prefWidth="613.0" />
+                  <Label fx:id="usernameE" prefHeight="20.0" prefWidth="254.0" text="Username can't be Empty" textFill="#e41010" visible="false">
+                     <graphic>
+                        <MaterialDesignIconView fill="#dd0e0e" glyphName="ALERT_CIRCLE_OUTLINE" size="14" />
+                     </graphic>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Region prefHeight="17.0" prefWidth="613.0" />
+                  <HBox>
+                     <children>
+                        <JFXComboBox fx:id="countryCode" cache="true" cacheHint="SPEED" centerShape="false" focusColor="#dbcc21" prefHeight="30.0" prefWidth="250.0" promptText="Country Code" scaleShape="false" unFocusColor="#03a9f4" />
+                        <Region prefHeight="30.0" prefWidth="49.0" />
+                        <JFXTextField fx:id="phoneNo" alignment="CENTER" cache="true" cacheHint="SPEED" centerShape="false" focusColor="#dbcc21" labelFloat="true" maxWidth="256.0" prefHeight="30.0" prefWidth="256.0" promptText="Phone No. (Optional)" scaleShape="false" unFocusColor="#03a9f4">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <Region prefHeight="40.0" prefWidth="731.0" />
+                  <Pane prefHeight="36.0" prefWidth="613.0">
+                     <children>
+                        <HBox>
+                           <children>
+                              <JFXPasswordField fx:id="password" alignment="CENTER" cache="true" cacheHint="SPEED" centerShape="false" focusColor="#dbcc21" labelFloat="true" maxWidth="250.0" prefWidth="250.0" promptText="Password" scaleShape="false" unFocusColor="#03a9f4">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXPasswordField>
+                              <Region prefHeight="50.0" prefWidth="50.0" />
+                              <JFXPasswordField fx:id="passwordRep" alignment="CENTER" cache="true" cacheHint="SPEED" centerShape="false" focusColor="#dbcc21" labelFloat="true" maxWidth="250.0" prefWidth="250.0" promptText="Repeat Password" scaleShape="false" unFocusColor="#03a9f4">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXPasswordField>
+                           </children>
+                        </HBox>
+                     </children>
+                  </Pane>
+                  <Label fx:id="notMatch" text="Password didn't match." textFill="#e41010" visible="false">
+                     <graphic>
+                        <MaterialDesignIconView fill="#dd0e0e" glyphName="ALERT_CIRCLE_OUTLINE" size="14" />
+                     </graphic>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Region prefHeight="20.0" prefWidth="613.0" />
+                  <JFXDatePicker fx:id="birthDate" cache="true" cacheHint="SPEED" centerShape="false" defaultColor="#03a9f4" editable="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="288.0" promptText="Birth Date" scaleShape="false">
+                     <stylesheets>
+                        <URL value="@../date.css" />
+                        <URL value="@../resources/datpiccker%20-%20Copy.css" />
+                     </stylesheets></JFXDatePicker>
+                  <Region prefHeight="20.0" prefWidth="613.0" />
+                  <HBox />
+                  <Label text="Address:" textFill="#393e46">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="addressE" layoutX="10.0" layoutY="104.0" prefHeight="20.0" prefWidth="254.0" text="Please fill ALL address fields" textFill="#e41010" visible="false">
+                     <graphic>
+                        <MaterialDesignIconView fill="#dd0e0e" glyphName="ALERT_CIRCLE_OUTLINE" size="14" />
+                     </graphic>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Region prefHeight="7.0" prefWidth="613.0" />
+                  <HBox>
+                     <children>
+                        <JFXComboBox fx:id="contryBox" cache="true" cacheHint="SPEED" centerShape="false" focusColor="#dbcc21" prefHeight="30.0" prefWidth="250.0" promptText="Country" scaleShape="false" unFocusColor="#03a9f4" />
+                        <Region prefHeight="30.0" prefWidth="50.0" />
+                        <JFXTextField fx:id="state" alignment="CENTER" cache="true" cacheHint="SPEED" centerShape="false" focusColor="#dbcc21" labelFloat="true" maxWidth="250.0" prefWidth="250.0" promptText="State" scaleShape="false" unFocusColor="#03a9f4">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <Region prefHeight="30.0" prefWidth="200.0" />
+                  <HBox>
+                     <children>
+                        <JFXTextField fx:id="city" alignment="CENTER" cache="true" cacheHint="SPEED" centerShape="false" focusColor="#dbcc21" labelFloat="true" maxWidth="250.0" prefWidth="250.0" promptText="City" scaleShape="false" unFocusColor="#03a9f4">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <Region prefHeight="30.0" prefWidth="50.0" />
+                        <JFXTextField fx:id="street" alignment="CENTER" cache="true" cacheHint="SPEED" centerShape="false" focusColor="#dbcc21" labelFloat="true" maxWidth="250.0" prefWidth="250.0" promptText="Street" scaleShape="false" unFocusColor="#03a9f4">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <Region prefHeight="25.0" prefWidth="613.0" />
+                  <HBox alignment="BOTTOM_LEFT">
+                     <children>
+                        <Region prefHeight="53.0" prefWidth="152.0" />
+                        <JFXButton fx:id="signup" buttonType="RAISED" cache="true" cacheHint="SPEED" centerShape="false" onAction="#signupNext" prefHeight="53.0" prefWidth="276.0" ripplerFill="WHITE" scaleShape="false" stylesheets="@../resources/Buttons%20-%20Copy%20-%20Copy%20-%20Copy%20-%20Copy.css" text="Sign Up!" textFill="#eeeeee">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                           <effect>
+                              <DropShadow height="10.63" offsetX="1.0" offsetY="1.0" radius="4.445" spread="0.08" width="9.15" />
+                           </effect>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+         <left>
+            <HBox BorderPane.alignment="CENTER">
+               <children>
+                  <Pane cache="true" cacheHint="SPEED" prefHeight="720.0" prefWidth="351.0" style="-fx-background-color: linear-gradient(to top right,#00BCD4,#03A9F4);">
+                     <children>
+                        <Text cache="true" cacheHint="SPEED" fill="#eeeeee" layoutX="24.0" layoutY="367.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Your dream artwork could be just waiting for you!" wrappingWidth="307.455078125">
+                           <font>
+                              <Font name="Book Antiqua Bold" size="48.0" />
+                           </font>
+                        </Text>
+                        <Hyperlink alignment="CENTER" cache="true" cacheHint="SPEED" focusTraversable="false" layoutX="18.0" layoutY="13.0" onAction="#backToSignIn" pickOnBounds="false" prefHeight="38.0" prefWidth="140.0" text="Back to Sign in.." textFill="#eeeeee">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <graphic>
+                              <MaterialDesignIconView fill="#eeeeee" glyphName="ARROW_LEFT_BOLD" wrappingWidth="18.0" />
+                           </graphic>
+                        </Hyperlink>
+                        <ImageView fitHeight="177.0" fitWidth="210.0" layoutX="69.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../ArtixLogoX.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Region prefHeight="720.0" prefWidth="36.0" style="-fx-background-color: eeeeee;" />
+               </children>
+            </HBox>
+         </left>
+      </BorderPane>
+   </children>
+</StackPane>

@@ -1,0 +1,19 @@
+.chart-title {
+    -fx-text-fill: white;
+    -fx-font-size: 1.6em;
+}
+
+.axis-label {
+    -fx-text-fill: white;
+}
+.default-color0.chart-series-line { -fx-stroke: #02ADF1; }
+.chart-series-line {
+    -fx-stroke-width: 2px;
+    -fx-effect: null;
+}
+.default-color0.chart-line-symbol {
+    -fx-background-radius: 2.0px;
+    -fx-padding: 2.0px;
+    -fx-border-color: #02ADF1;
+    -fx-background-color: white;
+}

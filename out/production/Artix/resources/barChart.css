@@ -1,0 +1,14 @@
+.chart-bar {
+    -fx-bar-fill:#5DCAF6;
+
+}
+.chart-title{
+-fx-text-fill: #D1EFFB;
+}
+.axis-label {
+    -fx-text-fill: #D1EFFB;
+}
+.chart-legend {
+    -fx-legend-visible: false;
+    -fx-background-color: transparent;
+}

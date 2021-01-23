@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.emojione.EmojiOneView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="233.0" prefWidth="976.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.SearchNode">
+   <children>
+      <ImageView fitHeight="181.0" fitWidth="241.0" layoutX="58.0" layoutY="23.0" pickOnBounds="true">
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Label layoutX="344.0" layoutY="23.0" prefHeight="21.0" prefWidth="549.0" text="Name of the Painting" textFill="#03a9f4">
+         <font>
+            <Font size="29.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="449.0" layoutY="84.0" prefHeight="26.0" prefWidth="460.0" text="Name of Artist" textFill="#dbcc21">
+         <font>
+            <Font name="Calibri Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="449.0" layoutY="121.0" prefHeight="26.0" prefWidth="214.0" text="11223" textFill="#dbcc21">
+         <font>
+            <Font name="Calibri Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="449.0" layoutY="159.0" prefHeight="26.0" prefWidth="214.0" text="512.678" textFill="#dbcc21">
+         <font>
+            <Font name="Calibri Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="340.0" layoutY="86.0" prefHeight="22.0" prefWidth="76.0" text="By:" textFill="#03a9f4">
+         <font>
+            <Font name="Calibri Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="353.0" layoutY="123.0" prefHeight="22.0" prefWidth="95.0" text="Barcode:" textFill="#03a9f4">
+         <font>
+            <Font name="Calibri Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="356.0" layoutY="161.0" prefHeight="22.0" prefWidth="70.0" text="Price:" textFill="#03a9f4">
+         <font>
+            <Font name="Calibri Bold" size="19.0" />
+         </font>
+      </Label>
+      <Separator layoutX="25.0" layoutY="227.0" prefHeight="2.0" prefWidth="930.0" style="-fx-background-color: #dbcc21;" />
+      <MaterialDesignIconView fill="#dd3a24" glyphName="BRUSH" layoutX="343.0" layoutY="103.0" size="18" wrappingWidth="20.0" />
+      <MaterialDesignIconView fill="#ee2ca7" glyphName="TAG_OUTLINE" layoutX="344.0" layoutY="140.0" size="18" />
+      <EmojiOneView fill="#178033" glyphName="MONEY_WITH_WINGS" layoutX="344.0" layoutY="178.0" size="18" />
+   </children>
+</Pane>

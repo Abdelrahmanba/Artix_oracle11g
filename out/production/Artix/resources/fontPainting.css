@@ -1,0 +1,8 @@
+@font-face {
+    src: url("brush.ttf");
+}
+
+.label {
+    -fx-font-family:'Brush Script MT';
+    -fx-font-size:45;
+}

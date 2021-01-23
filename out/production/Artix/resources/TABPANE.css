@@ -1,0 +1,27 @@
+.jfx-tab-pane
+{
+    -fx-padding: 0px;
+    -fx-background-color:  linear-gradient(to right,#03A9F4,#00bae8);
+    -fx-background-insets: 0, 0;
+}
+
+.jfx-tab-pane .headers-region
+{
+    -fx-background-color:  linear-gradient(to right,#03A9F4,#00bae8);
+
+}
+
+.jfx-tab-pane .tab-header-background
+{
+    -fx-background-color:  linear-gradient(to right,#03A9F4,#00bae8);
+}
+
+.jfx-tab-pane .tab-header-area .jfx-rippler
+{
+    -jfx-rippler-fill:YEllow
+}
+
+.jfx-tab-pane .tab-header-area .tab-selected-line{
+    -fx-border-color: #dbcc21;
+}
+

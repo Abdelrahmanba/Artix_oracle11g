@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane cache="true" cacheHint="SPEED" prefHeight="387.0" prefWidth="644.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.ErrorDialogController">
+   <children>
+      <JFXTextArea editable="false" focusColor="#329fff" layoutX="39.0" layoutY="168.0" prefHeight="164.0" prefWidth="574.0" unFocusColor="RED">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextArea>
+      <JFXButton layoutX="548.0" layoutY="341.0" prefHeight="31.0" prefWidth="68.0" text="OK" textFill="#007add">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <Text fx:id="label" cache="true" cacheHint="SPEED" fill="#ff0404" layoutX="34.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Error!" wrappingWidth="257.13671875">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Label fx:id="text" layoutX="46.0" layoutY="67.0" prefHeight="78.0" prefWidth="567.0" text="Something went wrong .. " textFill="#029cdd">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="481.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../error.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

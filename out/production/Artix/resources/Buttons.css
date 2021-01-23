@@ -1,0 +1,14 @@
+  
+.button
+{
+-fx-background-color : #e2f6ff;
+}
+.button:hover
+{
+-fx-background-color :#93dcfe ;
+}
+
+
+.jfx-hamburger StackPane {
+    -fx-background-color: #eeeeee;
+}

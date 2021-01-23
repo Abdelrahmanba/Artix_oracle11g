@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="stackPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.EmployeesController">
+   <children>
+      <VBox cache="true" cacheHint="SPEED" maxHeight="801.0" minHeight="720.0" prefHeight="720.0" prefWidth="1000.0">
+         <children>
+            <Pane cache="true" cacheHint="SPEED" prefHeight="130.0" prefWidth="1000.0" style="-fx-background-color: linear-gradient(to top right,#03A9F4,#00bae8);">
+               <children>
+                  <Text cache="true" cacheHint="SPEED" fill="WHITE" layoutX="175.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employees">
+                     <font>
+                        <Font name="Leelawadee UI" size="41.0" />
+                     </font>
+                     <effect>
+                        <Blend mode="LIGHTEN">
+                           <topInput>
+                              <Glow />
+                           </topInput>
+                        </Blend>
+                     </effect>
+                  </Text>
+                  <JFXHamburger fx:id="ham" cache="true" cacheHint="SPEED" layoutX="14.0" layoutY="14.0" onMouseClicked="#hamEvent" prefHeight="29.0" prefWidth="45.0" stylesheets="@../Buttons.css" />
+                  <JFXTextField fx:id="filter" focusColor="#e4f6ff" focusTraversable="false" layoutX="741.0" layoutY="90.0" prefHeight="25.0" prefWidth="238.0" promptText="Search" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="WHITE" />
+               </children>
+            </Pane>
+            <Pane cache="true" cacheHint="SPEED" prefHeight="590.0" prefWidth="1000.0" style="-fx-background-color: #e4f6ff;">
+               <children>
+                  <ImageView cache="true" cacheHint="SPEED" fitHeight="591.0" fitWidth="219.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Employees.png" />
+                     </image>
+                  </ImageView>
+                  <JFXTreeTableView fx:id="table" cache="true" cacheHint="SPEED" focusTraversable="false" layoutX="160.0" layoutY="39.0" pickOnBounds="false" prefHeight="549.0" prefWidth="838.0" stylesheets="@../Table.css">
+                     <columnResizePolicy>
+                        <TreeTableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </JFXTreeTableView>
+                  <JFXDrawer fx:id="drawer" cache="true" cacheHint="SPEED" defaultDrawerSize="160.0" prefHeight="590.0" prefWidth="160.0" />
+                  <HBox alignment="TOP_CENTER" layoutX="160.0" layoutY="-2.0" minHeight="38.0" prefHeight="55.0" prefWidth="841.0">
+                     <children>
+                        <JFXButton fx:id="addB" focusTraversable="false" minHeight="42.0" minWidth="280.0" text="    Add" textFill="#0286c2">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <graphic>
+                              <MaterialDesignIconView fill="#0286c2" glyphName="ACCOUNT_PLUS" size="30" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="deleteB" disable="true" focusTraversable="false" minWidth="280.0" onAction="#delete" prefHeight="42.0" prefWidth="290.0" text="     Delete" textFill="#0286c2">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <graphic>
+                              <MaterialDesignIconView fill="#0286c2" glyphName="DELETE_CIRCLE" size="30" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="exploreB" disable="true" focusTraversable="false" layoutX="431.0" layoutY="10.0" minHeight="42.0" minWidth="280.0" text="    Explore" textFill="#0286c2">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <graphic>
+                              <OctIconView fill="#0286c2" glyphName="LINK_EXTERNAL" size="25" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<StackPane fx:id="stackPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.AdminDashboardController">
+   <children>
+      <AnchorPane cache="true" cacheHint="SPEED" maxHeight="720.0" maxWidth="1000.0" minHeight="720.0" minWidth="1000.0" prefHeight="720.0" prefWidth="1000.0" style="-fx-background-color: linear-gradient(to top right,#03A9F4,#00bae8);">
+         <children>
+            <JFXHamburger fx:id="ham" cache="true" cacheHint="SPEED" layoutX="14.0" layoutY="14.0" onMouseClicked="#hamEvent" prefHeight="29.0" prefWidth="45.0" stylesheets="@../Buttons.css" />
+            <JFXDrawer fx:id="drawer" alignment="BOTTOM_CENTER" cache="true" cacheHint="SPEED" defaultDrawerSize="160.0" layoutY="130.0" prefHeight="590.0" prefWidth="160.0" />
+            <JFXButton fx:id="orders" alignment="CENTER" cache="true" cacheHint="SPEED" contentDisplay="TOP" focusTraversable="false" layoutX="175.0" layoutY="425.0" prefHeight="175.0" prefWidth="197.0" ripplerFill="#0273a8" stylesheets="@../Buttons.css" text="Orders" textFill="#007b93">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView cache="true" cacheHint="SPEED" fill="#007b93" glyphName="CART_OUTLINE" size="50" />
+               </graphic>
+            </JFXButton>
+            <Text cache="true" cacheHint="SPEED" fill="WHITE" layoutX="160.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome Back!">
+               <font>
+                  <Font name="Leelawadee UI" size="41.0" />
+               </font>
+            </Text>
+            <Label fx:id="sold" cache="true" cacheHint="SPEED" layoutX="175.0" layoutY="167.0" text="Paintings were sold in last month." textFill="WHITE">
+               <font>
+                  <Font name="Yu Gothic UI Semilight" size="32.0" />
+               </font>
+            </Label>
+            <Label fx:id="shipped" cache="true" cacheHint="SPEED" layoutX="175.0" layoutY="240.0" text="Orders are waiting to be shipped." textFill="WHITE">
+               <font>
+                  <Font name="Yu Gothic UI Semilight" size="32.0" />
+               </font>
+            </Label>
+            <Label fx:id="made" cache="true" cacheHint="SPEED" layoutX="175.0" layoutY="313.0" text="0 ILS Earned last month." textFill="WHITE">
+               <font>
+                  <Font name="Yu Gothic UI Semilight" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="hourse" cache="true" cacheHint="SPEED" fitHeight="714.0" fitWidth="468.0" layoutX="532.0" layoutY="25.0" opacity="0.11" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../hourse.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="addPainting" alignment="CENTER" cache="true" cacheHint="SPEED" contentDisplay="TOP" focusTraversable="false" layoutX="425.0" layoutY="425.0" prefHeight="175.0" prefWidth="197.0" ripplerFill="#0273a8" stylesheets="@../Buttons.css" text="Add Painting" textFill="#007b93">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView cache="true" cacheHint="SPEED" fill="#007b93" glyphName="DATABASE_PLUS" size="50" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,12 @@
+
+.text-area{
+    -fx-opacity: 1.0;
+    -fx-text-opacity: 1.0;
+    -fx-text-fill:#02ADF1;
+    -fx-text-alignment: center;
+    -fx-background-color: #D1EFFB;
+}
+
+.text-area *.text {
+    -fx-text-alignment: center;
+}

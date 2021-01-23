@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane cache="true" cacheHint="SPEED" prefHeight="646.0" prefWidth="861.0" style="-fx-background-color: F2FAFE;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.ExplorePaintingController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="92.0" prefWidth="861.0" style="-fx-background-color: linear-gradient(to top right,#03A9F4,#96DDFE);">
+         <children>
+            <Region prefHeight="92.0" prefWidth="15.0" />
+            <JFXButton prefHeight="34.0" prefWidth="17.0" text=" " visible="false">
+               <graphic>
+                  <MaterialDesignIconView fill="#eeeeee" glyphName="ARROW_LEFT_BOLD" size="37" />
+               </graphic>
+            </JFXButton>
+            <Label fx:id="name" prefHeight="92.0" prefWidth="742.0" text="Sample" textFill="WHITE">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="41.0" />
+               </font>
+            </Label>
+            <VBox visible="false">
+               <children>
+                  <JFXButton prefHeight="25.0" prefWidth="15.0" text=" " textFill="#00b2ff" fx:id="x">
+                     <graphic>
+                        <MaterialDesignIconView glyphName="CLOSE" size="20" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <VBox layoutX="45.0" layoutY="126.0" prefHeight="458.0" prefWidth="126.0" spacing="15.0">
+         <children>
+            <Label text="Artist:" textFill="#0094d3">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="20.0" />
+               </font>
+            </Label>
+            <Label text="Barcode:" textFill="#0094d3">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="20.0" />
+               </font>
+            </Label>
+            <Label text="dimensions:" textFill="#0094d3">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="20.0" />
+               </font>
+            </Label>
+            <Label text="Price:" textFill="#0094d3">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="20.0" />
+               </font>
+            </Label>
+            <Label text="Genre:" textFill="#0094d3">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="20.0" />
+               </font>
+            </Label>
+            <Label text="Sold On:" textFill="#0094d3">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="20.0" />
+               </font>
+            </Label>
+            <Label text="Creation Date" textFill="#0094d3">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="100.0" text="Added On:" textFill="#0094d3">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="20.0" />
+               </font>
+            </Label>
+            <Label text="Description:" textFill="#0094d3">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <ImageView fx:id="image" fitHeight="359.0" fitWidth="437.0" layoutX="398.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true" />
+      <VBox layoutX="181.0" layoutY="126.0" prefHeight="393.0" prefWidth="281.0" spacing="15.0">
+         <children>
+            <Label fx:id="artist" prefHeight="30.0" prefWidth="270.0" text="sample" textFill="#d1ac00">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="barcode" prefHeight="30.0" prefWidth="270.0" text="sample" textFill="#d1ac00">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="di" prefHeight="30.0" prefWidth="270.0" text="sample" textFill="#d1ac00">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="price" prefHeight="30.0" prefWidth="270.0" text="sample" textFill="#d1ac00">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="genre" prefHeight="30.0" prefWidth="270.0" text="sample" textFill="#d1ac00">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="soldon" prefHeight="30.0" prefWidth="270.0" text="sample" textFill="#d1ac00">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="createdon" prefHeight="30.0" prefWidth="270.0" text="sample" textFill="#d1ac00">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="addedon" layoutX="10.0" layoutY="280.0" prefHeight="30.0" prefWidth="270.0" text="sample" textFill="#d1ac00">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <JFXTextArea fx:id="desc" editable="false" focusColor="#d1ac00" focusTraversable="false" layoutX="181.0" layoutY="480.0" prefHeight="143.0" prefWidth="587.0" style="-fx-text-fill: #d1ac00;" text="dsfsdf" unFocusColor="#d1ac00">
+         <font>
+            <Font name="Yu Gothic UI Light" size="18.0" />
+         </font>
+      </JFXTextArea>
+   </children>
+</Pane>

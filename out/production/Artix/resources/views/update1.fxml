@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane cache="true" cacheHint="SPEED" prefHeight="518.0" prefWidth="685.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Update1Controller">
+   <children>
+      <Text cache="true" cacheHint="SPEED" fill="#00ccff" layoutX="33.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Personal info" wrappingWidth="302.13671875">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="update" cache="true" cacheHint="SPEED" focusTraversable="false" layoutX="234.0" layoutY="454.0" prefHeight="39.0" prefWidth="250.0" ripplerFill="#90b3bc" stylesheets="@../resources/Buttons%20-%20Copy%20-%20Copy.css" text="Update" textFill="#0098c3">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="error" layoutX="50.0" layoutY="141.0" text="An artist with this name already exits!" textFill="RED" visible="false">
+         <graphic>
+            <MaterialDesignIconView fill="RED" glyphName="ALERT_CIRCLE_OUTLINE" size="15" />
+         </graphic>
+      </Label>
+      <Label fx:id="biofill" layoutX="51.0" layoutY="425.0" text="Please fill this field" textFill="RED" visible="false">
+         <graphic>
+            <MaterialDesignIconView fill="RED" glyphName="ALERT_CIRCLE_OUTLINE" size="15" />
+         </graphic>
+      </Label>
+      <Label fx:id="namefill" layoutX="50.0" layoutY="141.0" text="Please fill this field!" textFill="RED" visible="false">
+         <graphic>
+            <MaterialDesignIconView fill="RED" glyphName="ALERT_CIRCLE_OUTLINE" size="15" />
+         </graphic>
+      </Label>
+      <JFXTextField fx:id="firstName" alignment="CENTER" cache="true" cacheHint="SPEED" centerShape="false" focusColor="#dbcc21" labelFloat="true" layoutX="68.0" layoutY="96.0" maxWidth="250.0" prefHeight="25.0" prefWidth="250.0" promptText="First Name" unFocusColor="#03a9f4">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="lastName" alignment="CENTER" cache="true" cacheHint="SPEED" centerShape="false" focusColor="#dbcc21" labelFloat="true" layoutX="359.0" layoutY="96.0" maxWidth="250.0" prefHeight="25.0" prefWidth="250.0" promptText="Last Name" scaleShape="false" unFocusColor="#03a9f4">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="email" alignment="CENTER" cache="true" cacheHint="SPEED" centerShape="false" focusColor="#dbcc21" labelFloat="true" layoutX="68.0" layoutY="229.0" maxWidth="250.0" minWidth="250.0" prefHeight="30.0" prefWidth="250.0" promptText="Email Address" scaleShape="false" unFocusColor="#03a9f4">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="phoneNo" alignment="CENTER" cache="true" cacheHint="SPEED" centerShape="false" focusColor="#dbcc21" labelFloat="true" layoutX="68.0" layoutY="164.0" maxWidth="256.0" prefHeight="30.0" prefWidth="256.0" promptText="Phone No. (Optional)" scaleShape="false" unFocusColor="#03a9f4">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="password" alignment="CENTER" cache="true" cacheHint="SPEED" centerShape="false" focusColor="#dbcc21" labelFloat="true" layoutX="68.0" layoutY="291.0" maxWidth="250.0" prefWidth="250.0" promptText="Password" scaleShape="false" unFocusColor="#03a9f4">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXDatePicker fx:id="birthDate" cache="true" cacheHint="SPEED" centerShape="false" defaultColor="#03a9f4" editable="false" layoutX="68.0" layoutY="371.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="288.0" promptText="Birth Date" scaleShape="false">
+         <stylesheets>
+            <URL value="@../date.css" />
+            <URL value="@../resources/datpiccker%20-%20Copy.css" />
+         </stylesheets>
+      </JFXDatePicker>
+      <Label fx:id="nameE" layoutX="357.0" layoutY="37.0" prefHeight="20.0" prefWidth="254.0" text="Check your inoput!" textFill="#e41010" visible="false">
+         <graphic>
+            <MaterialDesignIconView fill="#dd0e0e" glyphName="ALERT_CIRCLE_OUTLINE" size="14" />
+         </graphic>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

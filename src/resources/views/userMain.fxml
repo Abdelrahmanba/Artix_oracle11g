@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="2200.0" prefWidth="709.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Home">
+   <children>
+      <Label layoutX="23.0" layoutY="21.0" text="Added Recently.." textFill="WHITE">
+         <font>
+            <Font name="Calibri Light" size="39.0" />
+         </font>
+      </Label>
+      <Separator layoutX="31.0" layoutY="577.0" prefHeight="5.0" prefWidth="643.0" />
+      <Label layoutX="38.0" layoutY="600.0" text="We chose for you.." textFill="WHITE">
+         <font>
+            <Font name="Calibri Light" size="39.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="1187.0" text="Our most Valuable.." textFill="WHITE">
+         <font>
+            <Font name="Calibri Light" size="39.0" />
+         </font>
+      </Label>
+      <Separator layoutX="32.0" layoutY="1149.0" prefHeight="5.0" prefWidth="643.0" />
+      <Separator layoutX="31.0" layoutY="1732.0" prefHeight="5.0" prefWidth="643.0" />
+      <Label layoutX="35.0" layoutY="1765.0" text="People loves.." textFill="WHITE">
+         <font>
+            <Font name="Calibri Light" size="39.0" />
+         </font>
+      </Label>
+      <VBox layoutX="46.0" layoutY="1835.0" prefHeight="334.0" prefWidth="605.0" spacing="8.0">
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #f9f7da; -fx-background-radius: 10 10 10 10;">
+               <children>
+                  <ImageView fitHeight="99.0" fitWidth="95.0" layoutX="10.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/first.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="top1" fitHeight="95.0" fitWidth="138.0" layoutX="453.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+                  <Label fx:id="top1likes" layoutX="133.0" layoutY="70.0" text="likes" textFill="#51ae37">
+                     <font>
+                        <Font name="Calibri" size="20.0" />
+                     </font>
+                  </Label>
+                  <Hyperlink fx:id="top1label" layoutX="122.0" layoutY="14.0" prefHeight="47.0" prefWidth="265.0" text="Painting 1" textFill="#ddb138">
+                     <font>
+                        <Font name="Calibri" size="29.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+            </Pane>
+            <Pane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #f9f7da; -fx-background-radius: 10 10 10 10;">
+               <children>
+                  <ImageView fitHeight="91.0" fitWidth="98.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/second.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="top2" fitHeight="95.0" fitWidth="138.0" layoutX="453.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+                  <Label fx:id="top2likes" layoutX="135.0" layoutY="70.0" text="likes" textFill="#51ae37">
+                     <font>
+                        <Font name="Calibri" size="20.0" />
+                     </font>
+                  </Label>
+                  <Hyperlink fx:id="top2label" layoutX="124.0" layoutY="12.0" prefHeight="47.0" prefWidth="265.0" text="Painting 2" textFill="#ddb138">
+                     <font>
+                        <Font name="Calibri" size="29.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+            </Pane>
+            <Pane layoutX="10.0" layoutY="180.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #f9f7da; -fx-background-radius: 10 10 10 10;">
+               <children>
+                  <ImageView fitHeight="91.0" fitWidth="91.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/third.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="top3" fitHeight="95.0" fitWidth="138.0" layoutX="453.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+                  <Label fx:id="top3likes" layoutX="136.0" layoutY="70.0" text="likes" textFill="#51ae37">
+                     <font>
+                        <Font name="Calibri" size="20.0" />
+                     </font>
+                  </Label>
+                  <Hyperlink fx:id="top3label" layoutX="127.0" layoutY="11.0" prefHeight="47.0" prefWidth="265.0" text="Painting 3" textFill="#ddb138">
+                     <font>
+                        <Font name="Calibri" size="29.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+      <VBox fx:id="vbox1" layoutX="70.0" layoutY="101.0" maxWidth="-Infinity">
+         <children>
+            <ImageView fx:id="image" fitHeight="378.0" fitWidth="567.0" pickOnBounds="true">
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <Hyperlink fx:id="recentLabel" alignment="CENTER" opacity="0.84" prefHeight="55.0" prefWidth="567.0" style="-fx-background-color: #fffefc; -fx-background-radius: 0 0 10 10;" textAlignment="CENTER" textFill="#dbcc21">
+               <font>
+                  <Font name="Segoe UI Symbol" size="29.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </VBox>
+      <VBox fx:id="vbox2" alignment="CENTER" layoutX="71.0" layoutY="671.0" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <ImageView fx:id="artistLastestImg" fitHeight="378.0" fitWidth="567.0" pickOnBounds="true" preserveRatio="true">
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <Hyperlink fx:id="artistLatest" alignment="CENTER" opacity="0.84" prefHeight="55.0" prefWidth="571.0" style="-fx-background-color: #fffefc; -fx-background-radius: 0 0 10 10;" textAlignment="CENTER" textFill="#dbcc21">
+               <font>
+                  <Font name="Segoe UI Symbol" size="29.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </VBox>
+      <VBox fx:id="vbox3" layoutX="71.0" layoutY="1260.0" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <ImageView fx:id="top" fitHeight="378.0" fitWidth="567.0" pickOnBounds="true" preserveRatio="true">
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <Hyperlink fx:id="topLabel" alignment="CENTER" opacity="0.84" prefHeight="55.0" prefWidth="570.0" style="-fx-background-color: #fffefc; -fx-background-radius: 0 0 10 10;" textAlignment="CENTER" textFill="#dbcc21">
+               <font>
+                  <Font name="Segoe UI Symbol" size="29.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </VBox>
+   </children>
+</Pane>

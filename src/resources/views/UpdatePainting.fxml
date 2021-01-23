@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane cache="true" cacheHint="SPEED" prefHeight="659.0" prefWidth="839.0" style="-fx-background-color: F2FAFE;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.UpdatePaintingController">
+   <children>
+      <Pane prefHeight="92.0" prefWidth="839.0" style="-fx-background-color: linear-gradient(to top right,#0286c2,#96DDFE);">
+         <children>
+            <Label fx:id="nameL" layoutX="64.0" layoutY="17.0" text="Sample" textFill="WHITE">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="41.0" />
+               </font>
+            </Label>
+            <JFXButton focusTraversable="false" layoutX="803.0" layoutY="2.0" prefHeight="30.0" prefWidth="3.0" text="sdf" fx:id="x">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView fill="#0082c3" glyphName="CLOSE" size="25" wrappingWidth="23.0" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+      <VBox layoutX="45.0" layoutY="126.0" prefHeight="458.0" prefWidth="126.0" spacing="18.0">
+         <children>
+            <Label text="Name:" textFill="#0094d3">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="20.0" />
+               </font>
+            </Label>
+            <Label text="Artist:" textFill="#0094d3">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="20.0" />
+               </font>
+            </Label>
+            <Label text="Barcode:" textFill="#0094d3">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="20.0" />
+               </font>
+            </Label>
+            <Label text="dimensions:" textFill="#0094d3">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="20.0" />
+               </font>
+            </Label>
+            <Label text="Price:" textFill="#0094d3">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="20.0" />
+               </font>
+            </Label>
+            <Label text="Genre:" textFill="#0094d3">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="20.0" />
+               </font>
+            </Label>
+            <Label text="Creation Date" textFill="#0094d3">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="20.0" />
+               </font>
+            </Label>
+            <Label text="Description:" textFill="#0094d3">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <ImageView fx:id="image" fitHeight="297.0" fitWidth="352.0" layoutX="466.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true" />
+      <JFXTextField fx:id="name" alignment="CENTER" focusColor="#d1ac00" layoutX="175.0" layoutY="120.0" prefHeight="30.0" prefWidth="238.0" style="-fx-text-fill: #d1ac00;" unFocusColor="#d1ac00">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label fx:id="barcode" layoutX="174.0" layoutY="218.0" prefHeight="30.0" prefWidth="270.0" text="sample" textFill="#d1ac00">
+         <font>
+            <Font name="Yu Gothic UI Light" size="20.0" />
+         </font>
+      </Label>
+      <HBox alignment="BOTTOM_CENTER" layoutX="175.0" layoutY="259.0" spacing="10.0">
+         <children>
+            <JFXTextField fx:id="hight" alignment="CENTER" focusColor="#d1ac00" prefHeight="30.0" prefWidth="65.0" style="-fx-text-fill: #d1ac00;" unFocusColor="#d1ac00">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <Label fx:id="likes" prefHeight="30.0" prefWidth="16.0" text="X" textFill="#d1ac00">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="20.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="width" alignment="CENTER" focusColor="#d1ac00" prefHeight="30.0" prefWidth="63.0" style="-fx-text-fill: #d1ac00;" unFocusColor="#d1ac00">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXComboBox fx:id="unit" focusColor="#d1ac00" prefHeight="25.0" prefWidth="69.0" stylesheets="@../css/combobox.css" unFocusColor="#d1ac00" />
+         </children>
+      </HBox>
+      <JFXTextField fx:id="price" alignment="CENTER" focusColor="#d1ac00" layoutX="175.0" layoutY="308.0" prefHeight="30.0" prefWidth="126.0" style="-fx-text-fill: #d1ac00;" unFocusColor="#d1ac00">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXComboBox fx:id="genre" focusColor="#d1ac00" layoutX="175.0" layoutY="354.0" prefHeight="35.0" prefWidth="116.0" style="-fx-text-fill: #d1ac00;" stylesheets="@../css/combobox.css" unFocusColor="#d1ac00" />
+      <JFXDatePicker fx:id="date" defaultColor="#d1ac00" editable="false" layoutX="175.0" layoutY="397.0" prefHeight="35.0" prefWidth="171.0" stylesheets="@../resources/date%20-%20Copy.css" />
+      <JFXTextArea fx:id="desc" focusColor="#d1ac00" focusTraversable="false" layoutX="169.0" layoutY="467.0" prefHeight="109.0" prefWidth="587.0" style="-fx-text-fill: #d1ac00;" text="dsfsdf" unFocusColor="#d1ac00">
+         <font>
+            <Font name="Yu Gothic UI Light" size="18.0" />
+         </font>
+      </JFXTextArea>
+      <JFXButton layoutX="198.0" layoutY="603.0" onAction="#delete" prefHeight="42.0" prefWidth="222.0" stylesheets="@../resources/Buttons%20-%20Copy.css" text="Delete This Painting " textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="463.0" layoutY="603.0" onAction="#update" prefHeight="42.0" prefWidth="222.0" stylesheets="@../resources/Buttons%20-%20Copy%20-%20Copy.css" text="Commit Updates" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXComboBox fx:id="artist" focusColor="#d1ac00" layoutX="175.0" layoutY="171.0" prefHeight="25.0" prefWidth="238.0" stylesheets="@../css/combobox.css" unFocusColor="#d1ac00" />
+   </children>
+</Pane>

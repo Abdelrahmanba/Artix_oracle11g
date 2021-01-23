@@ -1,0 +1,77 @@
+<component name="libraryTable">
+  <library name="ant-1.7.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/ant-1.7.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/antlr-2.7.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/barbecue-1.5-beta1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/barcode4j-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/batik-anim.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/batik-awt-util.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/batik-bridge.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/batik-css.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/batik-dom.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/batik-ext.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/batik-gvt.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/batik-parser.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/batik-script.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/batik-svg-dom.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/batik-svggen.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/batik-util.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/batik-xml.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/bcel-5.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/bsh-2.0b4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/castor-core-1.3.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/castor-xml-1.3.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/commons-beanutils-1.9.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/commons-codec-1.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/commons-collections-3.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/commons-digester-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/commons-javaflow-20060411.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/commons-logging-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/core-2.3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/dom4j-1.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/ecj-4.3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/groovy-all-2.4.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/hibernate-core-3.3.2.GA.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/hsqldb-1.8.0-10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/httpclient-4.3.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/httpcore-4.3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/itext-2.1.7.js4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/jackson-annotations-2.1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/jackson-core-2.1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/jackson-databind-2.1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/jaxen-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/jcommon-1.0.23.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/jfreechart-1.0.19.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/jpa.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/jxl-2.6.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/log4j-1.2.15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/lucene-analyzers-common-4.5.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/lucene-core-4.5.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/lucene-queryparser-4.5.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/mondrian-3.1.1.12687.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/olap4j-0.9.7.309-JS-3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/png-encoder-1.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/poi-3.10.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/poi-ooxml-3.10.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/poi-ooxml-schemas-3.10.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/rhino-1.7.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/saaj-api-1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/serializer.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/servlet-api-2.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/spring-beans-2.5.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/spring-core-2.5.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/velocity-1.7-dep.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/xalan-2.7.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/xercesImpl-2.10.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/xml-apis-ext.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/xml-apis.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/xmlbeans-2.5.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/lib/xmpcore-5.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/dist/jasperreports-6.7.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Jasper/dist/jasperreports-javaflow-6.7.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

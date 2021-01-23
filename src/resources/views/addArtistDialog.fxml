@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<StackPane fx:id="stackPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.addArtistController">
+   <children>
+      <Pane cache="true" cacheHint="SPEED" prefHeight="518.0" prefWidth="706.0">
+         <children>
+            <Text cache="true" cacheHint="SPEED" fill="#90b3bc" layoutX="34.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add New Artist.." wrappingWidth="262.13671875">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+            <Text fx:id="text" cache="true" cacheHint="SPEED" layoutX="32.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add new artist so useres can view her\his profile and paintings. " wrappingWidth="659.5859375">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="add" cache="true" cacheHint="SPEED" focusTraversable="false" layoutX="613.0" layoutY="464.0" prefHeight="32.0" prefWidth="60.0" ripplerFill="#90b3bc" text="Add" textFill="#0098c3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="artistName" alignment="TOP_LEFT" cache="true" cacheHint="SPEED" focusColor="#90b3bc" labelFloat="true" layoutX="42.0" layoutY="142.0" prefHeight="32.0" prefWidth="208.0" promptText="Artist's Name" unFocusColor="#4d4d4d" />
+            <Label fx:id="invalid" cache="true" cacheHint="SPEED" layoutX="189.0" layoutY="132.0" prefHeight="46.0" prefWidth="79.0" text="Invalid!" textFill="#d30d0d" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView fill="#d70c0c" glyphName="ALERT_CIRCLE_OUTLINE" size="16" wrappingWidth="14.0" />
+               </graphic>
+            </Label>
+            <ImageView fx:id="image" cache="true" cacheHint="SPEED" fitHeight="224.0" fitWidth="224.0" layoutX="459.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/artist.png" />
+               </image>
+            </ImageView>
+            <JFXTextArea fx:id="bio" cache="true" cacheHint="SPEED" focusColor="#90b3bc" labelFloat="true" layoutX="42.0" layoutY="224.0" prefHeight="237.0" prefWidth="417.0" promptText="Biography &amp; History" />
+            <Label fx:id="error" layoutX="42.0" layoutY="186.0" text="An artist with this name already exits!" textFill="RED" visible="false">
+               <graphic>
+                  <MaterialDesignIconView fill="RED" glyphName="ALERT_CIRCLE_OUTLINE" size="15" />
+               </graphic>
+            </Label>
+            <Label fx:id="biofill" layoutX="42.0" layoutY="472.0" text="Please fill this field" textFill="RED" visible="false">
+               <graphic>
+                  <MaterialDesignIconView fill="RED" glyphName="ALERT_CIRCLE_OUTLINE" size="15" />
+               </graphic>
+            </Label>
+            <Label fx:id="namefill" layoutX="42.0" layoutY="186.0" text="Please fill this field!" textFill="RED" visible="false">
+               <graphic>
+                  <MaterialDesignIconView fill="RED" glyphName="ALERT_CIRCLE_OUTLINE" size="15" />
+               </graphic>
+            </Label>
+            <JFXButton layoutX="506.0" layoutY="366.0" onAction="#browser" prefHeight="32.0" prefWidth="131.0" text="Browser">
+               <stylesheets>
+                  <URL value="@../resources/Buttons%20-%20Copy%20-%20Copy.css" />
+                  <URL value="@../resources/Buttons%20-%20Copy%20-%20Copy%20-%20Copy.css" />
+               </stylesheets>
+            </JFXButton>
+            <Label fx:id="picfill" layoutX="513.0" layoutY="414.0" text="Please select a picture!" textFill="RED" visible="false">
+               <graphic>
+                  <MaterialDesignIconView fill="RED" glyphName="ALERT_CIRCLE_OUTLINE" size="15" />
+               </graphic>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</StackPane>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="stackPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.SearchController">
+   <children>
+      <VBox cache="true" cacheHint="SPEED" maxHeight="801.0" minHeight="720.0" prefHeight="720.0" prefWidth="1000.0">
+         <children>
+            <Pane cache="true" cacheHint="SPEED" prefHeight="130.0" prefWidth="1000.0" style="-fx-background-color: linear-gradient(to top right,#00BCD4,#03A9F4);">
+               <children>
+                  <Text fx:id="label" cache="true" cacheHint="SPEED" fill="WHITE" layoutX="139.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sample">
+                     <font>
+                        <Font name="Leelawadee UI" size="35.0" />
+                     </font>
+                     <effect>
+                        <Blend mode="LIGHTEN">
+                           <topInput>
+                              <Glow />
+                           </topInput>
+                        </Blend>
+                     </effect>
+                  </Text>
+                  <MaterialDesignIconView fx:id="back" fill="WHITE" glyphName="ARROW_LEFT_BOLD" layoutX="26.0" layoutY="80.0" size="40" wrappingWidth="38.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </MaterialDesignIconView>
+                  <ImageView fitHeight="103.0" fitWidth="183.0" layoutX="854.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../search.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <JFXTabPane prefHeight="608.0" prefWidth="1008.0" stylesheets="@../TABPANE.css">
+               <tabs>
+                  <Tab text="                                            Painting                                           ">
+                     <content>
+                        <AnchorPane prefWidth="998.0">
+                           <children>
+                              <ScrollPane layoutY="2.0" prefHeight="560.0" prefWidth="995.0" stylesheets="@../resources/scrolPane%20-%20user.css">
+                                 <content>
+                                    <VBox fx:id="paintingV" prefHeight="557.0" prefWidth="979.0">
+                                       <children>
+                                          <Region prefHeight="41.0" prefWidth="979.0" />
+                                          <HBox prefHeight="43.0" prefWidth="998.0">
+                                             <children>
+                                                <Region prefHeight="31.0" prefWidth="38.0" />
+                                                <Label text="Paintings:" textFill="#dbcc21">
+                                                   <font>
+                                                      <Font name="Cambria" size="30.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <Label fx:id="noresultsP" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="1041.0" text="No results :(" textAlignment="CENTER" visible="false" />
+                                       </children>
+                                    </VBox>
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="                                                 Artists                                                     ">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                     <content>
+                        <AnchorPane>
+                           <children>
+                              <ScrollPane prefHeight="562.0" prefWidth="1000.0" stylesheets="@../resources/scrolPane%20-%20user.css">
+                                 <content>
+                                    <VBox fx:id="artistV" prefHeight="555.0" prefWidth="986.0">
+                                       <children>
+                                          <Region prefHeight="48.0" prefWidth="986.0" />
+                                          <HBox>
+                                             <children>
+                                                <Region prefHeight="31.0" prefWidth="40.0" />
+                                                <Label text="Artists:" textFill="#dbcc21">
+                                                   <font>
+                                                      <Font name="Cambria" size="30.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <Label fx:id="noresultsA" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="1041.0" text="No results :(" textAlignment="CENTER" visible="false" />
+                                       </children>
+                                    </VBox>
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </JFXTabPane>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

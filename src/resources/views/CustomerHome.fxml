@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.CustomerHomeController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1000.0" style="-fx-background-color: linear-gradient(to top right,#00BCD4,#03A9F4);">
+          <children>
+              <Separator layoutX="219.0" layoutY="55.0" orientation="VERTICAL" prefHeight="625.0" prefWidth="13.0" />
+              <JFXTextField fx:id="searchBar" alignment="CENTER" focusColor="#f7cb11" layoutX="300.0" layoutY="13.0" opacity="0.64" prefHeight="31.0" prefWidth="438.0" promptText="Search, search, search .. !" style="-fx-text-fill: #ffffff;" unFocusColor="WHITE">
+                  <font>
+                      <Font name="Calibri" size="15.0" />
+                  </font>
+              </JFXTextField>
+                <ImageView fitHeight="146.0" fitWidth="165.0" layoutX="24.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/ArtixLogoX.png" />
+                    </image>
+                </ImageView>
+                <Separator layoutX="34.0" layoutY="557.0" prefHeight="5.0" prefWidth="144.0" />
+            <VBox layoutX="23.0" layoutY="233.0" prefHeight="245.0" prefWidth="178.0" spacing="30.0">
+               <children>
+                  <JFXButton fx:id="profile" prefHeight="58.0" prefWidth="188.0" ripplerFill="#dbcc21" text=" ">
+                     <graphic>
+                            <FontAwesomeIconView fill="WHITE" glyphName="USER_ALT" size="50" textAlignment="CENTER" wrappingWidth="136.99999821186066" />
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="likesB" prefHeight="58.0" prefWidth="157.0" ripplerFill="#dbcc21" text=" ">
+                     <graphic>
+                            <MaterialDesignIconView fill="WHITE" glyphName="HEART_OUTLINE" size="50" text="" textAlignment="CENTER" wrappingWidth="153.999990940094">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></MaterialDesignIconView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="cartB" ripplerFill="#dbcc21" text=" ">
+                     <graphic>
+                            <MaterialDesignIconView fx:id="Cart" fill="#fffefe" glyphName="CART_OUTLINE" size="50" text="" textAlignment="CENTER" wrappingWidth="150.99999821186066">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></MaterialDesignIconView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="orderB" layoutX="10.0" layoutY="206.0" prefHeight="56.0" prefWidth="351.0" ripplerFill="#dbcc21" text="   ">
+                     <graphic>
+                        <OctIconView fill="#f5f5f5" glyphName="PACKAGE" size="45">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </OctIconView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </VBox>
+            <ScrollPane fx:id="scrollPane" layoutX="255.0" layoutY="55.0" prefHeight="665.0" prefWidth="745.0" style="-fx-background-color: transparent;" stylesheets="@../resources/scrolPane%20-%20user.css" />
+              <JFXButton fx:id="searchB" buttonType="RAISED" contentDisplay="CENTER" layoutX="773.0" layoutY="19.0" prefHeight="31.0" prefWidth="65.0" style="-fx-background-color: #dbcc21;" text="Yalla!" textAlignment="CENTER" textFill="#e0f8ff">
+                  <ripplerFill>
+                      <RadialGradient centerX="0.48295454545454547" centerY="0.5097087378640777" radius="0.32926829268292684">
+                          <stops>
+                              <Stop color="#abe4eb" />
+                              <Stop color="#f2f5f5" offset="1.0" />
+                          </stops>
+                      </RadialGradient>
+                  </ripplerFill>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+              </JFXButton>
+            <JFXButton fx:id="signOutB" buttonType="RAISED" layoutX="55.0" layoutY="606.0" prefHeight="46.0" prefWidth="115.0" style="-fx-background-color: #dbcc21;" text="Sign Out" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Calibri Bold Italic" size="17.0" />
+               </font>
+               <ripplerFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.3292682926829268">
+                     <stops>
+                        <Stop color="#ebe286" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
+            </JFXButton>
+          </children>
+      </AnchorPane>
+   </children>
+</StackPane>

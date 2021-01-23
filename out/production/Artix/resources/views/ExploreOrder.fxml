@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.ExploreOrder">
+   <children>
+      <Pane cache="true" cacheHint="SPEED" prefHeight="619.0" prefWidth="861.0" style="-fx-background-color: F2FAFE;">
+         <children>
+            <Pane prefHeight="92.0" prefWidth="861.0" style="-fx-background-color: linear-gradient(to top right,#03A9F4,#96DDFE);">
+               <children>
+                  <Label fx:id="name" layoutX="27.0" layoutY="17.0" text="Sample" textFill="WHITE">
+                     <font>
+                        <Font name="Yu Gothic UI Light" size="41.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="37.0" fitWidth="27.0" layoutX="829.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Exit.png" />
+                     </image>
+                     <effect>
+                        <InnerShadow choke="1.0" color="#0b88e8" height="124.78" radius="79.68" width="195.94" />
+                     </effect>
+                  </ImageView>
+                  <JFXButton layoutX="826.0" layoutY="4.0" prefHeight="27.0" prefWidth="33.0" text=" " textFill="#258cc4" fx:id="x">
+                     <font>
+                        <Font size="1.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <ScrollPane fx:id="scrollpane" hbarPolicy="NEVER" layoutX="358.0" layoutY="104.0" prefHeight="505.0" prefWidth="484.0" stylesheets="@../scrolPane.css" />
+            <Label layoutX="39.0" layoutY="124.0" text="Total Price:" textFill="#0dacd3">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="181.0" text="Shipping Address:" textFill="#0dacd3">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="totalPrice" layoutX="154.0" layoutY="124.0" text="sample" textFill="#c6bd0c">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="shippingAddress" alignment="TOP_LEFT" layoutX="36.0" layoutY="226.0" prefHeight="146.0" prefWidth="298.0" text="sample" textFill="#c6bd0c">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="229.0" fitWidth="355.0" layoutY="390.0" opacity="0.57" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../orders-list-vector.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</StackPane>

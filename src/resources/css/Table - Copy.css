@@ -1,0 +1,36 @@
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-background-color:#03A9F4;
+}
+.table-view .column-header .label{
+   -fx-text-fill: white;
+   -fx-alignment: CENTER;
+}
+
+.table-view .cell{
+   -fx-cell-size: 35;
+    -fx-font-size:15px;
+    -fx-background-color: #F2FAFE;
+  -fx-border-color: #0286c2;
+    -fx-border-width: 0.1;
+  -fx-text-fill: #0286c2;
+  -fx-alignment: CENTER;
+   
+}
+.table-row-cell:selected {
+   -fx-background-color: whitesmoke; 
+   -fx-text-background-color:  #0286c2;
+   
+       
+}
+
+/* scroll bar starts here */
+
+/* The increment and decrement button CSS class of scrollbar */
+.table-view .increment-button ,.table-view .decrement-button {
+    -fx-background-color: transparent;
+	-fx-background-radius: 2em;
+
+}
+
+

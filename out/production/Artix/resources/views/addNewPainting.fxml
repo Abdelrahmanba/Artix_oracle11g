@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="stackPane" cache="true" cacheHint="SPEED" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.NewPaintingController">
+   <children>
+      <VBox cache="true" cacheHint="SPEED" maxHeight="801.0" minHeight="720.0" prefHeight="720.0" prefWidth="1000.0">
+         <children>
+            <Pane cache="true" cacheHint="SPEED" prefHeight="130.0" prefWidth="1000.0" style="-fx-background-color: linear-gradient(to top right,#03A9F4,#00bae8);">
+               <children>
+                  <Text cache="true" cacheHint="SPEED" fill="WHITE" layoutX="114.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Painting ">
+                     <font>
+                        <Font name="Leelawadee UI" size="41.0" />
+                     </font>
+                     <effect>
+                        <Blend mode="LIGHTEN">
+                           <topInput>
+                              <Glow />
+                           </topInput>
+                        </Blend>
+                     </effect>
+                  </Text>
+                  <JFXHamburger fx:id="ham" cache="true" cacheHint="SPEED" layoutX="14.0" layoutY="14.0" onMouseClicked="#hamEvent" prefHeight="29.0" prefWidth="45.0" stylesheets="@../Buttons.css" />
+               </children>
+            </Pane>
+            <Pane cache="true" cacheHint="SPEED" prefHeight="590.0" prefWidth="1000.0" style="-fx-background-color: #e4f6ff;">
+               <children>
+                  <JFXTextField fx:id="namep" cache="true" cacheHint="SPEED" focusColor="#dbcc21" labelFloat="true" layoutX="240.0" layoutY="40.0" prefHeight="30.0" prefWidth="250.0" promptText="Name" unFocusColor="BLACK" />
+                  <JFXTextField fx:id="barcode" cache="true" cacheHint="SPEED" focusColor="#dbcc21" labelFloat="true" layoutX="240.0" layoutY="102.0" prefHeight="30.0" prefWidth="250.0" promptText="Barcode" unFocusColor="BLACK" />
+                  <JFXTextField fx:id="hight" cache="true" cacheHint="SPEED" focusColor="#dbcc21" labelFloat="true" layoutX="240.0" layoutY="168.0" prefHeight="30.0" prefWidth="74.0" promptText="Hight" unFocusColor="BLACK" />
+                  <JFXTextField fx:id="width" cache="true" cacheHint="SPEED" focusColor="#dbcc21" labelFloat="true" layoutX="343.0" layoutY="168.0" prefHeight="30.0" prefWidth="74.0" promptText="width" unFocusColor="BLACK" />
+                  <JFXComboBox fx:id="unit" cache="true" cacheHint="SPEED" focusColor="#dbcc21" layoutX="418.0" layoutY="173.0" prefHeight="25.0" prefWidth="73.0" promptText="Unit" unFocusColor="BLACK" />
+                  <JFXTextField fx:id="price" cache="true" cacheHint="SPEED" focusColor="#dbcc21" labelFloat="true" layoutX="240.0" layoutY="220.0" prefHeight="30.0" prefWidth="250.0" promptText="Price" unFocusColor="BLACK" />
+                  <JFXDatePicker fx:id="date" cache="true" cacheHint="SPEED" defaultColor="#f5dd20" editable="false" layoutX="240.0" layoutY="284.0" prefHeight="30.0" prefWidth="250.0" promptText="Create Date" />
+                  <JFXComboBox fx:id="genere" cache="true" cacheHint="SPEED" focusColor="#dbcc21" layoutX="240.0" layoutY="341.0" promptText="Genere" />
+                  <JFXComboBox fx:id="artist" cache="true" cacheHint="SPEED" focusColor="#dbcc21" layoutX="242.0" layoutY="394.0" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" promptText="Artist" />
+                  <JFXTextArea fx:id="desc" cache="true" cacheHint="SPEED" focusColor="#dbcc21" labelFloat="true" layoutX="243.0" layoutY="448.0" prefHeight="95.0" prefWidth="490.0" promptText="Description " unFocusColor="BLACK" />
+                  <JFXButton fx:id="cancel" cache="true" cacheHint="SPEED" layoutX="825.0" layoutY="532.0" text="Cancel" textFill="#dbcc21">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="save" cache="true" cacheHint="SPEED" layoutX="910.0" layoutY="532.0" text="Save" textFill="#dbcc21">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXButton>
+                  <MaterialDesignIconView cache="true" cacheHint="SPEED" fill="#dbcc21" glyphName="WINDOW_CLOSE" layoutX="312.0" layoutY="197.0" size="25" />
+                  <ImageView cache="true" cacheHint="SPEED" fitHeight="591.0" fitWidth="219.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../acrylic-landscape-painting.jpg" />
+                     </image>
+                  </ImageView>
+                  <JFXDrawer fx:id="drawer" cache="true" cacheHint="SPEED" defaultDrawerSize="160.0" prefHeight="590.0" prefWidth="160.0" />
+                  <MaterialDesignIconView cache="true" cacheHint="SPEED" glyphName="CURRENCY_USD" layoutX="201.0" layoutY="251.0" size="25" />
+                  <MaterialDesignIconView cache="true" cacheHint="SPEED" glyphName="RULER" layoutX="199.0" layoutY="197.0" size="25" />
+                  <MaterialDesignIconView cache="true" cacheHint="SPEED" glyphName="ALPHABETICAL" layoutX="199.0" layoutY="70.0" size="25" />
+                  <MaterialDesignIconView cache="true" cacheHint="SPEED" glyphName="COMMENT_TEXT_OUTLINE" layoutX="201.0" layoutY="470.0" size="25" />
+                  <MaterialDesignIconView cache="true" cacheHint="SPEED" glyphName="BARCODE_SCAN" layoutX="201.0" layoutY="128.0" size="25" text="" />
+                  <MaterialDesignIconView cache="true" cacheHint="SPEED" glyphName="CALENDAR_PLUS" layoutX="199.0" layoutY="312.0" size="25" />
+                  <MaterialDesignIconView cache="true" cacheHint="SPEED" glyphName="IMAGE_MULTIPLE" layoutX="198.0" layoutY="365.0" size="25" />
+                  <Hyperlink fx:id="addArtist" cache="true" cacheHint="SPEED" layoutX="408.0" layoutY="396.0" text="Add New Artist.." visible="false">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Hyperlink>
+                  <OctIconView cache="true" cacheHint="SPEED" glyphName="PERSON" layoutX="201.0" layoutY="418.0" size="25" />
+                  <ImageView fx:id="painting" cache="true" cacheHint="SPEED" fitHeight="355.0" fitWidth="275.0" layoutX="668.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Qustion.jpg" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D minX="555.0" minY="555.0" />
+                     </viewport>
+                  </ImageView>
+                  <JFXButton fx:id="browser" cache="true" cacheHint="SPEED" layoutX="668.0" layoutY="409.0" onAction="#openBrowser" text="Browser">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXTextField fx:id="browserField" cache="true" cacheHint="SPEED" editable="false" focusColor="#3a4051" focusTraversable="false" layoutX="750.0" layoutY="409.0" prefHeight="25.0" prefWidth="150.0" />
+                  <Label fx:id="errorName" cache="true" cacheHint="SPEED" layoutX="500.0" layoutY="58.0" text="Please fill this field" textFill="RED" visible="false">
+                     <graphic>
+                        <MaterialDesignIconView fill="RED" glyphName="ALERT_CIRCLE_OUTLINE" size="16" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="errorBarcode" cache="true" cacheHint="SPEED" layoutX="500.0" layoutY="119.0" text="Please fill this field" textFill="RED" visible="false">
+                     <graphic>
+                        <MaterialDesignIconView fill="RED" glyphName="ALERT_CIRCLE_OUTLINE" size="16" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="errorGenere" cache="true" cacheHint="SPEED" layoutX="369.0" layoutY="348.0" text="Please select a value" textFill="RED" visible="false">
+                     <graphic>
+                        <MaterialDesignIconView fill="RED" glyphName="ALERT_CIRCLE_OUTLINE" size="16" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="errorHightWidth" cache="true" cacheHint="SPEED" layoutX="500.0" layoutY="180.0" text="Please fill this fields" textFill="RED" visible="false">
+                     <graphic>
+                        <MaterialDesignIconView fill="RED" glyphName="ALERT_CIRCLE_OUTLINE" size="16" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="errorArtist" cache="true" cacheHint="SPEED" layoutX="408.0" layoutY="401.0" text="Please select a value" textFill="RED" visible="false">
+                     <graphic>
+                        <MaterialDesignIconView fill="RED" glyphName="ALERT_CIRCLE_OUTLINE" size="16" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="errorPrice" cache="true" cacheHint="SPEED" layoutX="502.0" layoutY="235.0" text="Please fill this field" textFill="RED" visible="false">
+                     <graphic>
+                        <MaterialDesignIconView fill="RED" glyphName="ALERT_CIRCLE_OUTLINE" size="16" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="errrorDesc" cache="true" cacheHint="SPEED" layoutX="240.0" layoutY="554.0" text="Please fill this field" textFill="RED" visible="false">
+                     <graphic>
+                        <MaterialDesignIconView fill="RED" glyphName="ALERT_CIRCLE_OUTLINE" size="16" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="errorBarcode1" cache="true" cacheHint="SPEED" layoutX="240.0" layoutY="140.0" prefHeight="17.0" prefWidth="229.0" text="This barcode is Already registered." textFill="RED" visible="false">
+                     <graphic>
+                        <MaterialDesignIconView fill="RED" glyphName="ALERT_CIRCLE_OUTLINE" size="16" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="errorImage" cache="true" cacheHint="SPEED" layoutX="752.0" layoutY="445.0" text="Please select an Image..!" textFill="RED" visible="false">
+                     <graphic>
+                        <MaterialDesignIconView fill="RED" glyphName="ALERT_CIRCLE_OUTLINE" size="16" />
+                     </graphic>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</StackPane>
